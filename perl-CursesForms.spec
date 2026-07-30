@@ -2,7 +2,7 @@
 %define upstream_version 1.997
 Name:		perl-%{upstream_name}
 Version:	1.997
-Release:	5
+Release:	6
 
 Summary:	Form management for Curses::Widgets
 License:	GPL+ or Artistic
@@ -28,8 +28,7 @@ specialised forms are also available under *Curses::Forms::Dialog*.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
