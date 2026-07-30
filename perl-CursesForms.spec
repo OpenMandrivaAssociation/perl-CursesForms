@@ -1,13 +1,14 @@
 %define upstream_name    CursesForms
+%define upstream_version 1.997
 Name:		perl-%{upstream_name}
 Version:	1.997
-Release:	6
+Release:	1
 
 Summary:	Form management for Curses::Widgets
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Curses/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CO/CORLISS/CursesForms-1.997.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,15 +42,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 1.997.0-2mdv2011.0
-+ Revision: 658522
-- rebuild for updated spec-helper
-
-* Wed Jun 09 2010 Jérôme Quelin <jquelin@mandriva.org> 1.997.0-1mdv2011.0
-+ Revision: 547327
-- import perl-CursesForms
-
-
-* Wed Jun 09 2010 cpan2dist 1.997-1mdv
-- initial mdv release, generated with cpan2dist
