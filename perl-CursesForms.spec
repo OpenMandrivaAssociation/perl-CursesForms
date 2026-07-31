@@ -2,7 +2,7 @@
 %define upstream_version 1.997
 Name:		perl-%{upstream_name}
 Version:	1.997
-Release:	34
+Release:	35
 
 Summary:	Form management for Curses::Widgets
 License:	GPL+ or Artistic
